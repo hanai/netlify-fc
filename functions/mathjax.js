@@ -15,7 +15,7 @@ const renderSVG = (formula) => {
       svg: true,
     }, function (data) {
       if (!data.errors) {
-        resolve(data);
+        resolve(data.svg);
       }
     });
   });
